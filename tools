@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Tools - Rock Website</title>
+  <style>
+    body { font-family: Arial; background: #0a0a40; color: white; text-align: center; }
+    textarea { width: 90%; height: 120px; margin-top: 10px; }
+    button { margin: 5px; padding: 10px 20px; border: none; border-radius: 8px; background: #ffcc00; cursor: pointer; }
+    a { color: #ffcc00; display: block; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Text Case Converter</h1>
+  <p>Type text below and convert it:</p>
+  <textarea id="text"></textarea><br>
+  <button onclick="toUpper()">UPPERCASE</button>
+  <button onclick="toLower()">lowercase</button>
+
+  <script>
+    function toUpper() {
+      document.getElementById('text').value = 
+      document.getElementById('text').value.toUpperCase();
+    }
+    function toLower() {
+      document.getElementById('text').value = 
+      document.getElementById('text').value.toLowerCase();
+    }
+  </script>
+
+  <a href="index.html">⬅ Back to Home</a>
+</body>
+</html>
